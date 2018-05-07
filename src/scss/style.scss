@@ -1,0 +1,45 @@
+body {
+    max-height: 100vh;
+    background: radial-gradient(circle, #fff, #ccc);
+}
+
+.container-main-content {
+    background-color: #9dd2ea;
+    margin-top: 5vh;
+    min-height: 80vh;
+    border-radius: 3vh;
+    box-shadow: 0px 4px 0px 0px  black;
+    text-align: center;
+    width: 50vw;
+    padding: 5vh;
+}
+
+.score {
+    background-color: #f1ff92;
+    color: #888e5f;
+    min-height: 5vh;
+    text-align: center;
+    min-width: 15vh;
+    padding: 2vh;
+}
+
+.container-question{
+    background-color: pink;
+    padding: 10vh;
+}
+
+.sentence {
+    background-color: black;
+    padding: 2vh;
+}
+
+.answer {
+    text-align: center;
+    background-color: fuchsia;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+    padding: 10vh;
+    
+
+}
