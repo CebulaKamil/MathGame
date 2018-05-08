@@ -1,5 +1,5 @@
 body {
-    max-height: 100vh;
+    height: 100vh;
     background: radial-gradient(circle, #fff, #ccc);
 }
 
@@ -21,16 +21,19 @@ body {
     text-align: center;
     min-width: 15vh;
     padding: 2vh;
+    margin-bottom: 2vh;
 }
 
 .container-question{
     background-color: pink;
     padding: 10vh;
+    margin-bottom: 2vh;
 }
 
 .sentence {
     background-color: black;
     padding: 2vh;
+    margin-bottom: 2vh;
 }
 
 .answer {
@@ -39,7 +42,22 @@ body {
     padding: 0px;
     margin: 0px;
     border: 1px solid black;
-    padding: 10vh;
-    
+    padding: 5vh;
+}
 
+.true {
+    display: none;
+    background-color: green;
+}
+
+.false {
+    display: none;
+    background-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-main-content {
+        width: 100%;
+        min-height: 100vh;
+    }
 }
