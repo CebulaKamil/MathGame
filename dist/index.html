@@ -2,12 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Math Game</title>
+    <title>Maths Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    HEJJ kurwa  asdasd
+    <main class="container container-main-content">
+        <div class="container">
+            <div class="row justify-content-end score-row">
+                <div class="col1 score true" id="true-answer">TRUE</div>
+                <div class="col1 score false" id="false-answer">False</div>
+                <div class="col1 score">Score: 
+                    <span class="scoreValue"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container container-content">
+            <div class="row">
+                <div class="col question" id="question-box">X * X</div>
+            </div>
+            <div class="row">
+                    <div class="col sentence">Click on the correct answer</div>
+            </div>
+            <div class="row">
+                <div class="answer col-sm-3" id="choice1">x</div>
+                <div class="answer col-sm-3" id="choice2">x</div>
+                <div class="answer col-sm-3" id="choice3">x</div>
+                <div class="answer col-sm-3" id="choice4">x</div>
+            </div>
+            <div class="row justify-content-center row-battons">
+                <button class="justify-content-center col-lg-3 btn button" id="start-game">Start Game</button>
+            </div>
+            <div class="row justify-content-center row-battons">
+                <div class="justify-content-center col-lg-3" id="time">Time remaining: <span id="time-remaining-value">0</span>sec</div>
+            </div>
+        </div>
+    </main>
+    <div class="modal-game-over" id="modal-game-over">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="game-over-alert">
+                    Game Over <br>
+                    Your score is:
+                    <br>
+                    <span class="scoreValue"></span> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

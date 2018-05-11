@@ -59,31 +59,18 @@ body {
     top: 5px;
 }
 
-.true {
+#true-answer {
     display: none;
     background-color: green;
 }
 
-.false {
+#false-answer {
     display: none;
-    background-color: red;
+    background-color: red; 
 }
 
 .button {
     margin: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-    .container-main-content {
-        margin-top: 0;
-        width: 100%;
-        min-height: 100vh;
-    }
-
-    .answer {
-        width: 50%;
-    }
-
 }
 
 .modal-game-over {
@@ -112,4 +99,22 @@ body {
 
 #time {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-main-content {
+        margin-top: 0;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .answer {
+        width: 50%;
+    }
+
+    .col-4xx {
+        width: 100vh;
+        background-color: red;
+        color: red;
+    }
 }
